@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>TravalerLog2</title>
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+  <script src="../js/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+ </head>
+<body>
+
+<div class="container">
+    <div class="card mt-5 mb-5 mx-auto" style="width: 50rem;">
+  <div class="card-header" >
+   <div class="card-title fs-5 text-center" >訊息：<span th:text="${emailmessage}?${emailmessage}"></span></div>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title fs-3 text-center">EasyStep登入請選擇</h5>
+    <div class="row">
+  <div class="col-sm-6 mb-3  mt-3">
+    <div class="card" >
+      
+      <div class="card-header fs-5 text-center"> <i class="bi bi-person-vcard me-2"></i><strong>小幫手登入</strong></div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a  href="http://localhost:5173/Traveler/TravelerLog" class="btn btn-outline-secondary btn-sm">登入</a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6  mb-3  mt-3">
+    <div class="card">
+      <div class="card-header fs-5 text-center" ><i class="bi bi-person-vcard-fill me-2"></i><strong>廠商登入</strong></div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="http://localhost:5173/Vender/VenderLog" class="btn btn-outline-secondary btn-sm ">登入</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="card-footer text-body-secondary"></div>
+</div>
+	
+</div>
+
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
